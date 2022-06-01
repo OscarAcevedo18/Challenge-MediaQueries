@@ -21,9 +21,12 @@ body, html {
         }
 
     nav {
-        padding: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7%;
         grid-area: menu;
-        background: #0037a1;
+        background: #164faadf;
         color: white;
         }
 
