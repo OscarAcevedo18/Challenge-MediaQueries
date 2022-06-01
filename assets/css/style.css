@@ -1,0 +1,62 @@
+body, html {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+}
+
+@media (max-width: 576px) {
+    body {
+    background: bisque;
+    grid-template-columns: 1fr 10fr 1fr;
+    }
+    }
+    .container {
+        display: grid;
+        border: 1px solid black;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+            "menu"
+            "principal-section"
+            "pie-de-pagina";
+        }
+
+    nav {
+        padding: 18px;
+        grid-area: menu;
+        background: #0037a1;
+        color: white;
+        }
+
+    main {
+        grid-area: principal-section;
+        padding: 10px;
+        
+        }
+
+    footer {
+        grid-area: pie-de-pagina;
+        background: #d02a1e;
+        color: white;
+        padding: 10px;
+        }
+
+        
+        
+    /*
+@media ( min-width: 576px) {
+    body {
+    background: rgb(129, 103, 64);
+    .grid { grid-template-columns: 1fr 1fr }
+    }
+    }
+
+    @media (min-width: 992px) {
+        body{
+            background-color: aqua;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-areas:
+        menu "seccion-principal"
+        menu "seccion-principal"
+        "pie de pagina seccion-principal";
+        }
+        }
