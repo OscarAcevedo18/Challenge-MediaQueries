@@ -7,15 +7,16 @@ body, html {
 @media (max-width: 576px) {
     body {
     background: bisque;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 1fr 10fr 1fr;
     }
     }
     .container {
         display: grid;
         border: 1px solid black;
-        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
         grid-template-areas:
             "menu"
+            "filter"
             "principal-section"
             "pie-de-pagina";
         }
@@ -28,6 +29,24 @@ body, html {
         grid-area: menu;
         background: #164faadf;
         color: white;
+        }
+        .price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: "filter";
+        background: #9f9f9fdf;
+        color: black;
+        }
+        button {
+            display: flex;
+            justify-content: space-between;
+            background-color: aliceblue;
+            border-style: none;
+            height: 2.5rem;
+            width: 18rem;
+            margin-bottom: 3%;
         }
 
     main {
