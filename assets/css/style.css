@@ -24,6 +24,7 @@ body, html {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding: 7%;
         grid-area: menu;
         background: #164faadf;
