@@ -15,13 +15,12 @@ body {
 @media (min-width: 576px) {
     body {
     background: bisque;
-    grid-template-columns: 1fr 1fr 10fr 1fr;
+    
     }
     }
     .container {
         display: grid;
         border: 1px solid black;
-        grid-template-rows: 1fr 1fr 10fr 1fr;
         grid-template-areas:
             "menu"
             "filter"
@@ -36,6 +35,7 @@ body {
         align-items: center;
         padding: 7%;
         grid-area: menu;
+        height: 3vh;
         background: #164faadf;
         color: white;
         }
@@ -45,6 +45,7 @@ body {
         justify-content: center;
         align-items: center;
         grid-area: "filter";
+        height: 12vh;
         background: #9f9f9fdf;
         color: black;
         }
@@ -61,11 +62,13 @@ body {
     main {
         grid-area: principal-section;
         padding: 10px;
+        height: 85vh;
         
         }
 
     footer {
         grid-area: pie-de-pagina;
+        height: 10vh;
         background: #d02a1e;
         color: white;
         padding: 10px;
