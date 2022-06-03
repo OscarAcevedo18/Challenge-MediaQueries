@@ -45,6 +45,10 @@ body {
         justify-content: center;
         align-items: center;
         grid-area: "filter";
+<<<<<<< HEAD
+=======
+        padding-top: 0.5rem;
+>>>>>>> filter
         height: 12vh;
         background: #9f9f9fdf;
         color: black;
@@ -52,11 +56,14 @@ body {
         button {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: aliceblue;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             border-style: none;
             height: 2.5rem;
             width: 18rem;
-            margin-bottom: 3%;
         }
 
     main {
