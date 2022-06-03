@@ -1,19 +1,26 @@
-body, html {
+* {
     margin: 0%;
     padding: 0%;
-    height: 100vh;
 }
 
-@media (max-width: 576px) {
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: grid;
+}
+
+@media (min-width: 576px) {
     body {
     background: bisque;
-    grid-template-columns: 1fr 1fr 10fr 1fr;
+    
     }
     }
     .container {
         display: grid;
         border: 1px solid black;
-        grid-template-rows: 1fr 1fr 10fr 1fr;
         grid-template-areas:
             "menu"
             "filter"
@@ -25,8 +32,10 @@ body, html {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding: 7%;
         grid-area: menu;
+        height: 3vh;
         background: #164faadf;
         color: white;
         }
@@ -36,27 +45,34 @@ body, html {
         justify-content: center;
         align-items: center;
         grid-area: "filter";
+        padding-top: 0.5rem;
+        height: 12vh;
         background: #9f9f9fdf;
         color: black;
         }
         button {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: aliceblue;
+            padding: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
             border-style: none;
             height: 2.5rem;
             width: 18rem;
-            margin-bottom: 3%;
         }
 
     main {
         grid-area: principal-section;
         padding: 10px;
+        height: 85vh;
         
         }
 
     footer {
         grid-area: pie-de-pagina;
+        height: 10vh;
         background: #d02a1e;
         color: white;
         padding: 10px;
