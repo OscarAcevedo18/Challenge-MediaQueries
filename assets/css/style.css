@@ -15,7 +15,6 @@ body {
 @media (min-width: 576px) {
     body {
     background: bisque;
-    
     }
     }
     .container {
@@ -39,20 +38,19 @@ body {
         background: #164faadf;
         color: white;
         }
+        
         .price {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         grid-area: "filter";
-<<<<<<< HEAD
-=======
         padding-top: 0.5rem;
->>>>>>> filter
         height: 12vh;
         background: #9f9f9fdf;
         color: black;
         }
+
         button {
             display: flex;
             justify-content: space-between;
