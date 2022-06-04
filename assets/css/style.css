@@ -81,7 +81,7 @@ body {
         
     }
     main img {
-        width: 95%;
+        width: 91%;
     }
     .boton {
         display: flex;
@@ -90,7 +90,7 @@ body {
         text-align: center;
         background-color: #e9890bdf;
         color: white;
-        width: 33%;
+        width: 50%;
         border-radius: 8%;
     }
     .adedd {
@@ -125,15 +125,20 @@ body {
         }
 
     footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         grid-area: pie-de-pagina;
-        background: #d02a1e;
+        background: #ff2c2caf;
         color: white;
-        padding: 10px;
+        padding-top: 2%;
+        padding-bottom: 3%;
         }
         
     @media (min-width: 576px) {
         body{
-            display: grid;
+            display: block;
             background-color: aqua;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
